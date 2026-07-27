@@ -186,6 +186,73 @@ h1 {
   margin-top: 28px;
 }
 
+.signup-form {
+  display: grid;
+  gap: 18px;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(31, 41, 51, 0.18);
+  border-radius: 14px;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.consent-box {
+  padding: 16px;
+  border: 1px solid rgba(31, 41, 51, 0.12);
+  border-radius: 18px;
+  background: rgba(38, 70, 83, 0.05);
+}
+
+.consent {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.consent input {
+  margin-top: 4px;
+}
+
+.fine-print {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.button-inline {
+  width: fit-content;
+}
+
 @media (max-width: 900px) {
   .hero {
     padding: 44px 28px;
@@ -212,5 +279,9 @@ h1 {
   .page-header,
   .article {
     padding: 24px;
+  }
+
+  .field-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request Maintenance | Rental Triage</title>
+  <meta
+    name="description"
+    content="Public maintenance request form and SMS opt-in for Rental Triage."
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-shell narrow">
+    <header class="page-header">
+      <a class="back-link" href="./index.html">&larr; Back to home</a>
+      <div class="eyebrow">Rental Triage</div>
+      <h1>Request Maintenance</h1>
+      <p class="lead">
+        Submit a maintenance request and opt in to SMS updates about that request.
+        This page is public and can be reviewed without logging in.
+      </p>
+    </header>
+
+    <main class="article">
+      <form class="signup-form">
+        <div class="field-grid">
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Jane Tenant" />
+          </label>
+
+          <label class="field">
+            <span>Phone number</span>
+            <input type="tel" name="phone" autocomplete="tel" placeholder="+1 555 123 4567" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Property / unit</span>
+          <input type="text" name="property" placeholder="123 Main St, Unit 2" />
+        </label>
+
+        <label class="field">
+          <span>Request details</span>
+          <textarea name="message" rows="5" placeholder="Briefly describe the maintenance issue."></textarea>
+        </label>
+
+        <div class="consent-box">
+          <label class="consent">
+            <input type="checkbox" name="sms_consent" />
+            <span>
+              I agree to receive SMS updates from Rental Triage about this maintenance request.
+              Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help.
+              See the <a href="./privacy-policy.html">Privacy Policy</a> and
+              <a href="./terms.html">Terms of Service</a>.
+            </span>
+          </label>
+        </div>
+
+        <p class="fine-print">
+          This form is a public placeholder for campaign review. It demonstrates the consent flow:
+          a user enters their phone number, reviews the disclosures, and actively checks the consent box before submitting.
+        </p>
+
+        <button class="button primary button-inline" type="submit">Submit request</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
